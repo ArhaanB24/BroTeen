@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" id="inpt">
+        <label for="age">Age: 
+            <input type="number" name="age" id="age" min="0" age="100">
+        </label>
+        <label for="">Height in m: 
+            <input type="number" name="height" id="height" min="0" max="2" step="0.01" value="1.82">
+        </label>
+        <label for="">Weight in kgs:
+            <input type="number" name="weight" id="weight" min="0" max="150" value="65">
+        </label>
+    </form>
+    <button type="submit" onclick="mybmi()">Submit</button>
+    <div id="final"> </div>
+        <h2 id="result"></h2>
+        <h3 id="otpt"></h3>
+    <div id="tp"></div>        
+   
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
