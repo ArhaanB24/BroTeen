@@ -28,5 +28,18 @@ function mybmi(){
     else{
         document.getElementById("otpt").innerHTML = "Obese";
     }
-    
+
+    var ele = document.getElementsByName('gender');
+    var gen_value;
+    for (i = 0; i < ele.length; i++) {
+        if (ele[i].checked)
+        gen_value = ele[i].value;
+    }
+
+    if (gen_value == "male")
+        document.getElementById("tp").innerHTML = "1";
+    else if (gen_value == "female")
+        document.getElementById("tp").innerHTML = "0";
+    else
+        document.getElementById("tp").innerHTML = "10";
 }

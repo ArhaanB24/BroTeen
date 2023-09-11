@@ -17,15 +17,18 @@
         <label for="">Weight in kgs:
             <input type="number" name="weight" id="weight" min="0" max="150" value="65">
         </label>
+    <div class="gen">
+        Gender:
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female
+    </div>
+        
     </form>
     <button type="submit" onclick="mybmi()">Submit</button>
-    <div id="final"> </div>
-        <h2 id="result"></h2>
-        <h3 id="otpt"></h3>
-    <div id="tp"></div>        
-   
-    
-    
+    <div id="final"></div>
+    <h2 id="result"></h2>
+    <h3 id="otpt"></h3>
+    <div id="tp"></div>   
     <script src="index.js"></script>
 </body>
 </html>
