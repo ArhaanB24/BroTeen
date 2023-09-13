@@ -6,9 +6,10 @@ function underfunc(){
 }
 
 function mybmi(){
-    let height,weight;
+    let height,weight,age,bmr,act,maint;
     height = document.getElementById("height").value;
     weight = document.getElementById("weight").value;
+    age = document.getElementById("age").value;
     let bmi;
     bmi = parseFloat(weight)/(parseFloat(height)**2)
     document.getElementById("result").innerHTML = bmi;
@@ -37,9 +38,39 @@ function mybmi(){
     }
 
     if (gen_value == "male")
-        document.getElementById("tp").innerHTML = "1";
+    {
+        bmr = 66.47 + (13.75*weight) + (5.0003*height*100) - (6.755*age);
+        
+    }
     else if (gen_value == "female")
-        document.getElementById("tp").innerHTML = "0";
+    {
+        bmr = 655.1 + (9.563*weight) + (1.85*height*100) - (4.676*age);
+    }
     else
-        document.getElementById("tp").innerHTML = "10";
+    {
+        document.getElementById("tp").innerHTML = "10";     
+    }  
+    act = document.getElementById('exc').value;
+    // document.getElementById("tp").innerHTML = "Your Activity level: " + act;
+    if (act == 1)
+    {
+        maint = bmr*1.2;
+    } 
+    else if (act == 2)
+    {
+        maint = bmr*1.375;
+    }
+    else if (act == 3)
+    {
+        maint = bmr*1.55;
+    }
+    else if (act == 4)
+    {
+        maint = bmr*1.725;
+    }
+    else if (act == 5)
+    {
+        maint = bmr*1.9;
+    }
+    document.getElementById("tp").innerHTML = "Using Oxford Formula BMR: " + bmr + "<br>Maintainance Calories: " + maint;
 }

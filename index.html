@@ -9,20 +9,26 @@
 <body>
     <form action="" id="inpt">
         <label for="age">Age: 
-            <input type="number" name="age" id="age" min="0" age="100">
+            <input type="number" name="age" id="age" min="0" age="100" value="43">
         </label>
         <label for="">Height in m: 
-            <input type="number" name="height" id="height" min="0" max="2" step="0.01" value="1.82">
+            <input type="number" name="height" id="height" min="0" max="2" step="0.01" value="1.7">
         </label>
         <label for="">Weight in kgs:
-            <input type="number" name="weight" id="weight" min="0" max="150" value="65">
+            <input type="number" name="weight" id="weight" min="0" max="150" value="77">
         </label>
     <div class="gen">
         Gender:
-    <input type="radio" name="gender" value="Male">Male
-    <input type="radio" name="gender" value="Female">Female
+    <input type="radio" name="gender" value="male">Male
+    <input type="radio" name="gender" value="female">Female
     </div>
-        
+    <select name="exc" id="exc">
+        <option value="1">Little/No Excercise</option>
+        <option value="2">Light Excercise</option>
+        <option value="3">Moderate Excercise (3-5 days/week)</option>
+        <option value="4">Very Active (6-7 days/week)</option>
+        <option value="5">Extra Active (Very Active + Physical Job)</option>
+    </select>     
     </form>
     <button type="submit" onclick="mybmi()">Submit</button>
     <div id="final"></div>
@@ -32,3 +38,4 @@
     <script src="index.js"></script>
 </body>
 </html>
+
