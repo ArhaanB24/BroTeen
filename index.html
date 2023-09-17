@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brotein-Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mooli">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow Condensed">
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-family: 'Mooli';
+    }
+
+    * {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* title heading */
+    #navtitle {
+        font-size: 6rem;
+        font-weight: 550;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        color: white;
+        animation: title 2s cubic-bezier(1, 0.01, 0.6, 0.85) 1 both;
+    }
+
+    @keyframes title {
+        0% {
+            color: black;
+        }
+
+        50% {
+            color: white;
+        }
+    }
+
+    /* cbum and food image 1 information */
+    .infobox1,
+    .infobox2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .keywords {
+        color: purple;
+        font-weight: 600;
+        font-size: 2.8rem;
+    }
+
+    #info1,
+    #info2 {
+        font-size: 2.7rem;
+        width: 50%;
+        padding: 30px;
+        font-family: 'Barlow Condensed';
+        text-align: justify;
+        margin-right: 35px;
+        border-radius: 10px;
+    }
+
+    #info2 {
+        padding-left: 50px;
+    }
+
+    #banner1 {
+        border-radius: 10px;
+        height: 25rem;
+        width: 21rem;
+        border: 3px solid black;
+    }
+
+    #banner2 {
+        border-radius: 20px;
+        width: 23rem;
+        height: 25rem;
+        margin-left: 20px;
+        border: 3px solid black;
+    }
+
+    #banner1:hover {
+        height: 25.7rem;
+        width: 21.7rem;
+        animation: bor2 2s ease-in-out 1 forwards;
+    }
+
+    #banner2:hover {
+        height: 25.7rem;
+        width: 23.7rem;
+        animation: bor2 2s ease-in-out 1 forwards;
+    }
+
+    @keyframes bor2 {
+        66% {
+            border-color: purple;
+        }
+    }
+
+    /* saying banner */
+    .sayingdiv {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #banner3 {
+        width: 70rem;
+        height: 25rem;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    #banner3:hover {
+        animation: work 1s ease-in-out both;
+    }
+
+    @keyframes work {
+        50% {
+            width: 71rem;
+            height: 26rem;
+        }
+    }
+
+    /* FORM */
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    label {
+        margin-bottom: 15px;
+        font-size: 2.3rem;
+    }
+
+    input {
+        margin-bottom: 15px;
+        height: 1.5rem;
+        padding: 10px;
+    }
+
+    input[type='number'] {
+        font-size: 1.5rem;
+    }
+
+    input[type='radio'] {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    #bmilabel {
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        margin-top: 5rem;
+    }
+
+    .bmi {
+        color: purple;
+        font-weight: 600;
+        font-size: 4rem;
+    }
+
+    .buttondiv {
+        text-align: center;
+    }
+
+    .submit {
+        font-size: 2.3rem;
+        font-family: 'Mooli';
+        padding: 10px;
+        border-radius: 10px;
+        background-color: purple;
+        color: white;
+    }
+
+    select {
+        margin-top: 2rem;
+        width: 30rem;
+        height: 2rem;
+    }
+
+    select[type="option"] {
+        font-size: 2rem;
+    }
+
+    option {
+        font-size: 1rem;
+    }
+
+
+
+    @media all and (max-width:500px) {
+        #navtitle {
+            font-size: 60px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .infobox1,
+        .infobox2 {
+            flex-direction: column;
+        }
+
+        .keywords {
+            color: purple;
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        #info1,
+        #info2 {
+            font-size: 25px;
+            width: 80%;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #banner1,
+        #banner2 {
+            border-radius: 10px;
+            height: 320px;
+            width: 290px;
+            border: 3px solid black;
+            margin-bottom: 10px;
+        }
+
+        #banner2 {
+            margin-left: 0;
+        }
+
+        #banner1:hover,
+        #banner2:hover {
+            height: 330px;
+            width: 300px;
+            animation: bor2 2s ease-in-out both;
+        }
+
+        #banner3 {
+            width: 330px;
+            height: 200px;
+            margin-bottom: 30px;
+        }
+
+        #banner3:hover {
+            animation: work 1s ease-in-out both;
+        }
+
+        @keyframes work {
+            50% {
+                width: 340px;
+                height: 210px;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+
+        input {
+            margin-bottom: 10px;
+            height: 15px;
+            padding: 10px;
+        }
+
+        input[type='number'] {
+            font-size: 15px;
+        }
+
+        input[type='radio'] {
+            width: 15px;
+            height: 15px;
+        }
+
+        #bmilabel {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 40px;
+        }
+
+        .bmi {
+            color: purple;
+            font-weight: 600;
+            font-size: 30px;
+        }
+        .buttondiv {
+            text-align: center;
+        }
+
+        .submit {
+            font-size: 25px;
+            font-family: 'Mooli';
+            padding: 10px;
+            border-radius: 10px;
+            background-color: purple;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        select {
+            margin-top: 10px;
+            width: 250px;
+            height: 35px;
+        }
+
+        option {
+            font-size: 25px;
+        }
+
+    }
+</style>
+
+<body>
+
+    <p id="navtitle">Brotein</p>
+    <div class="infobox1">
+        <p id="info1">Welcome to our platform, where we're dedicated to helping you achieve
+            your <span class="keywords">health</span> and <span class="keywords">wellness</span> goals. Our tool
+            provides personalized insights tailored to
+            your unique profile, ensuring that your journey towards a balanced lifestyle is both effective and
+            sustainable.
+        </p>
+        <img id="banner1" src="static/cbum.jpg">
+    </div>
+    <div class="sayingdiv">
+        <img id="banner3" src="static/work.jpg">
+    </div>
+    <div class="infobox2">
+        <img id="banner2" src="static/food1.jpg">
+        <p id="info2">
+            Whether you're aiming to lose weight, maintain a healthy BMI, or optimize your nutrition, we've got the
+            resources to guide you. Join us today and embark on a transformative path towards a <span
+                class="keywords">healthier</span>, <span class="keywords">happier</span> you.
+            Lets get started.
+        </p>
+    </div>
+    <p id="bmilabel">Let's start with <span class="bmi">BMI</span></p>
+    <form action="" id="inpt">
+        <label for="age">Age:
+            <input type="number" name="age" id="age" min="0" max="100">
+        </label>
+        <label for="">Height in m:
+            <input type="number" name="height" id="height" min="0" max="2" step="0.01">
+        </label>
+        <label for="">Weight in kgs:
+            <input type="number" name="weight" id="weight" min="0" max="150">
+        </label>
+        <div class="gen">
+            <label>Gender: </label>
+            <input type="radio" name="gender" value="male"><label> Male </label>
+            <input type="radio" name="gender" value="female"><label> Female</label>
+        </div>
+        <select name="exc" id="exc">
+            <option value="1">Little/No Excercise</option>
+            <option value="2">Light Excercise</option>
+            <option value="3">Moderate Excercise (3-5 days/week)</option>
+            <option value="4">Very Active (6-7 days/week)</option>
+            <option value="5">Extra Active (Very Active + Physical Job)</option>
+        </select>
+    </form>
+    <div class="buttondiv">
+        <button type="submit" class="submit" onclick="mybmi()">Submit</button>
+    </div>
+    <div id="final"></div>
+    <h2 id="result"></h2>
+    <h3 id="otpt"></h3>
+    <div id="tp"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>

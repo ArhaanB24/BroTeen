@@ -1,0 +1,321 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Mooli';
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* title heading */
+#navtitle {
+    font-size: 6rem;
+    font-weight: 550;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+    animation: title 2s cubic-bezier(1, 0.01, 0.6, 0.85) 1 both;
+}
+
+@keyframes title {
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: white;
+    }
+}
+
+/* cbum and food image 1 information */
+.infobox1,
+.infobox2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.keywords {
+    color: purple;
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+
+#info1,
+#info2 {
+    font-size: 2.7rem;
+    width: 50%;
+    padding: 30px;
+    font-family: 'Barlow Condensed';
+    text-align: justify;
+    margin-right: 35px;
+    border-radius: 10px;
+}
+
+#info2 {
+    padding-left: 50px;
+}
+
+#banner1 {
+    border-radius: 10px;
+    height: 25rem;
+    width: 21rem;
+    border: 3px solid black;
+}
+
+#banner2 {
+    border-radius: 20px;
+    width: 23rem;
+    height: 25rem;
+    margin-left: 20px;
+    border: 3px solid black;
+}
+
+#banner1:hover {
+    height: 25.7rem;
+    width: 21.7rem;
+    animation: bor2 2s ease-in-out 1 forwards;
+}
+
+#banner2:hover {
+    height: 25.7rem;
+    width: 23.7rem;
+    animation: bor2 2s ease-in-out 1 forwards;
+}
+
+@keyframes bor2 {
+    66% {
+        border-color: purple;
+    }
+}
+
+/* saying banner */
+.sayingdiv {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner3 {
+    width: 70rem;
+    height: 25rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#banner3:hover {
+    animation: work 1s ease-in-out both;
+}
+
+@keyframes work {
+    50% {
+        width: 71rem;
+        height: 26rem;
+    }
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+label {
+    margin-bottom: 15px;
+    font-size: 2.3rem;
+}
+
+input {
+    margin-bottom: 15px;
+    height: 1.5rem;
+    padding: 10px;
+}
+
+input[type='number'] {
+    font-size: 1.5rem;
+}
+
+input[type='radio'] {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#bmilabel {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
+
+.bmi {
+    color: purple;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.buttondiv {
+    text-align: center;
+}
+
+.submit {
+    font-size: 2.3rem;
+    font-family: 'Mooli';
+    padding: 10px;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+    margin-bottom: 30px;
+}
+
+select {
+    margin-top: 2rem;
+    width: 30rem;
+    height: 2rem;
+}
+
+select[type="option"] {
+    font-size: 2rem;
+}
+
+option {
+    font-size: 1rem;
+}
+
+
+
+@media all and (max-width:500px) {
+    #navtitle {
+        font-size: 60px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .infobox1,
+    .infobox2 {
+        flex-direction: column;
+    }
+
+    .keywords {
+        color: purple;
+        font-weight: 600;
+        font-size: 25px;
+    }
+
+    #info1,
+    #info2 {
+        font-size: 25px;
+        width: 80%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    #banner1,
+    #banner2 {
+        border-radius: 10px;
+        height: 320px;
+        width: 290px;
+        border: 3px solid black;
+        margin-bottom: 10px;
+    }
+
+    #banner2 {
+        margin-left: 0;
+    }
+
+    #banner1:hover,
+    #banner2:hover {
+        height: 330px;
+        width: 300px;
+        animation: bor2 2s ease-in-out both;
+    }
+
+    #banner3 {
+        width: 330px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+
+    #banner3:hover {
+        animation: work 1s ease-in-out both;
+    }
+
+    @keyframes work {
+        50% {
+            width: 340px;
+            height: 210px;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    label {
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    input {
+        margin-bottom: 10px;
+        height: 15px;
+        padding: 10px;
+    }
+
+    input[type='number'] {
+        font-size: 15px;
+    }
+
+    input[type='radio'] {
+        width: 15px;
+        height: 15px;
+    }
+
+    #bmilabel {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+
+    .bmi {
+        color: purple;
+        font-weight: 600;
+        font-size: 30px;
+    }
+    .buttondiv {
+        text-align: center;
+    }
+
+    .submit {
+        font-size: 25px;
+        font-family: 'Mooli';
+        padding: 10px;
+        border-radius: 10px;
+        background-color: purple;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    select {
+        margin-top: 10px;
+        width: 250px;
+        height: 35px;
+    }
+
+    option {
+        font-size: 25px;
+    }
+
+}
