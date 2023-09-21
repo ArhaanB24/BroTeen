@@ -3,7 +3,14 @@ body {
     color: white;
     font-family: 'Mooli';
 }
-
+#quote{
+    font-family: 'Roboto', sans-serif;
+    font-size: 6rem;
+    margin-bottom: 5rem;
+}
+#lower{
+    font-weight: bolder;
+}
 * {
     text-decoration: none;
     margin: 0;
@@ -99,6 +106,7 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin: 5rem;
 }
 
 #banner3 {
