@@ -11,10 +11,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<body>
 
-    <p id="navtitle">BroTeen</p>
+<body>
+    <div id="navbar">
+        <p id="navtitle">BroTeen</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">BMI</a></li>
+            <li><a href="#">Diet</a></li>
+            <li><a href="#">Exercise</a></li>
+        </ul>
+    </div>
     <div class="infobox1">
         <p id="info1">Welcome to our platform, where we're dedicated to helping you achieve
             your <span class="keywords">health</span> and <span class="keywords">wellness</span> goals. Our tool
@@ -37,42 +46,44 @@
             Lets get started.
         </p>
     </div>
-    <p id="bmilabel">Let's start with <span class="bmi">BMI</span></p>
-    <form action="" id="inpt">
-        <label for="age">Age:
-            <input type="number" name="age" id="age" min="0" max="100">
-        </label>
-        <label for="">Height in m:
-            <input type="number" name="height" id="height" min="0" max="2" step="0.01">
-        </label>
-        <label for="">Weight in kgs:
-            <input type="number" name="weight" id="weight" min="0" max="150">
-        </label>
-        <div class="gen">
-            <label>Gender: </label>
-            <input type="radio" name="gender" value="male"><label> Male </label>
-            <input type="radio" name="gender" value="female"><label> Female</label>
-        </div>
-        <select name="exc" id="exc">
-            <option value="1">Little/No Excercise</option>
-            <option value="2">Light Excercise</option>
-            <option value="3">Moderate Excercise (3-5 days/week)</option>
-            <option value="4">Very Active (6-7 days/week)</option>
-            <option value="5">Extra Active (Very Active + Physical Job)</option>
-        </select>
-    </form>
-    <div class="buttondiv">
-        <button type="submit" class="submit" onclick="mybmi()">Submit</button>
-    </div>
     <center>
-        <div id="final-block">
-            <div id="final"></div>
-            <div id="result"></div>
-            <div id="otpt"></div>
-            <div id="tp"></div>
+    <div id="formdiv">
+        <p id="bmilabel">Let's start with <span class="bmi">BMI</span></p>
+        <form action="" id="inpt">
+            <label for="age">Age:
+                <input type="number" name="age" id="age" min="0" max="100">
+            </label>
+            <label for="">Height in m:
+                <input type="number" name="height" id="height" min="0" max="2" step="0.01">
+            </label>
+            <label for="">Weight in kgs:
+                <input type="number" name="weight" id="weight" min="0" max="150">
+            </label>
+            <div class="gen">
+                <label>Gender: </label>
+                <input type="radio" name="gender" value="male"><label> Male </label>
+                <input type="radio" name="gender" value="female"><label> Female</label>
+            </div>
+            <select name="exc" id="exc">
+                <option value="1">Little/No Excercise</option>
+                <option value="2">Light Excercise</option>
+                <option value="3">Moderate Excercise (3-5 days/week)</option>
+                <option value="4">Very Active (6-7 days/week)</option>
+                <option value="5">Extra Active (Very Active + Physical Job)</option>
+            </select>
+        </form>
+        <div class="buttondiv">
+            <button type="submit" class="submit" onclick="mybmi()">Submit</button>
         </div>
+    </div>
     </center>
-    
+    <center>
+        <div id="final"></div>
+        <h2 id="result"></h2>
+        <h3 id="otpt"></h3>
+        <div id="tp"></div>
+    </center>
+
     <script src="index.js"></script>
 </body>
 
