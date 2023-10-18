@@ -70,4 +70,25 @@ function mybmi(){
         maint = bmr*1.9;
     }
     document.getElementById("tp").innerHTML = "Using Oxford Formula BMR: " + bmr.toFixed(2) + "<br>Maintainance Calories: " + maint.toFixed(2);
+    window.onscroll = function() {fixednavbar()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function fixednavbar() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    
+    //INPUT FIELD ANIMATIONS
+    $("#age").hover(function(){
+        $(this).animate({"width":"20%"},500)
+    })
+    $("#height").hover(function(){
+        $(this).animate({"width":"20%"},500)
+    })
+    $("#weight").hover(function(){
+        $(this).animate({"width":"20%"},500)
+    })
 }
