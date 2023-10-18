@@ -152,7 +152,7 @@ ul {
 
     /* FORM */
 
-    form {
+    .forminpt {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -240,7 +240,20 @@ ul {
     option {
         font-size: 1rem;
     }
-
+    #final-block{
+        padding: 3rem;
+        font-size: 2rem;
+    }
+    #final-block button{
+        font-size: 2rem;
+        font-family: 'Mooli';
+        padding: 10px;
+        border-radius: 10px;
+        background-color: transparent;
+        border-color: white;
+        color: purple;
+        margin-bottom: 30px;
+    }
 
 
     @media all and (max-width:500px) {
