@@ -3,6 +3,35 @@ body {
     color: white;
     font-family: 'Mooli';
 }
+input{
+    background-color: transparent;
+    border-bottom: 2px solid purple;
+    color: purple;
+}
+#final-block{
+    padding: 3rem;
+    font-size: 2rem;
+}
+#final-block button{
+    font-size: 2rem;
+    font-family: 'Mooli';
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: white;
+    color: purple;
+    margin-bottom: 30px;
+}
+/* #final-block button:hover{
+    font-size: 2rem;
+    font-family: 'Mooli';
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border-color: white;
+    color: purple;
+    margin-bottom: 30px;
+} */
 #quote{
     font-family: 'Roboto', sans-serif;
     font-size: 6rem;

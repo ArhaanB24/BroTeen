@@ -12,7 +12,7 @@ function mybmi(){
     age = document.getElementById("age").value;
     let bmi;
     bmi = parseFloat(weight)/(parseFloat(height)**2)
-    document.getElementById("result").innerHTML = bmi;
+    document.getElementById("result").innerHTML = bmi.toFixed(2);
     if (bmi<18.5){
         document.getElementById("otpt").innerHTML = "Underweight";
         document.getElementById("final").innerHTML = '<br><form action="under.html"><button type="submit">View Diet Plan</button></form>';
@@ -28,6 +28,7 @@ function mybmi(){
     }
     else{
         document.getElementById("otpt").innerHTML = "Obese";
+        document.getElementById("final").innerHTML = '<br><form action="over.html"><button type="submit">View Diet Plan</button></form>'
     }
 
     var ele = document.getElementsByName('gender');
@@ -46,10 +47,6 @@ function mybmi(){
     {
         bmr = 655.1 + (9.563*weight) + (1.85*height*100) - (4.676*age);
     }
-    else
-    {
-        document.getElementById("tp").innerHTML = "10";     
-    }  
     act = document.getElementById('exc').value;
     // document.getElementById("tp").innerHTML = "Your Activity level: " + act;
     if (act == 1)
@@ -72,5 +69,5 @@ function mybmi(){
     {
         maint = bmr*1.9;
     }
-    document.getElementById("tp").innerHTML = "Using Oxford Formula BMR: " + bmr + "<br>Maintainance Calories: " + maint;
+    document.getElementById("tp").innerHTML = "Using Oxford Formula BMR: " + bmr.toFixed(2) + "<br>Maintainance Calories: " + maint.toFixed(2);
 }
