@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mooli">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Metal Mania">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -23,8 +24,8 @@
             <li><a href="#">Diet</a></li>
             <li><a href="#">Exercise</a></li>
         </ul>
-        <button class="mobilebtn"></button>
     </div>
+    <button class="mobilebtn"></button>
     <div class="infobox1">
         <p id="info1">Welcome to our platform, where we're dedicated to helping you achieve
             your <span class="keywords">health</span> and <span class="keywords">wellness</span> goals. Our tool
@@ -39,51 +40,52 @@
         <!-- <img id="banner3" src="static/work.jpg"> -->
     </div>
     <div class="infobox2">
-        <img id="banner2" src="static/food1.jpg">
+        <img id="banner2" src="static/food6.jpg">
         <p id="info2">
-            Whether you're aiming to lose weight, maintain a healthy BMI, or <span class="keywords">optimize</span> your nutrition, we've got the
+            Whether you're aiming to lose weight, maintain a healthy BMI, or <span class="keywords">optimize</span> your
+            nutrition, we've got the
             resources to guide you. Join us today and embark on a transformative path towards a <span
                 class="keywords">healthier</span> and <span class="keywords">happier</span> you.
             Lets get started.
         </p>
     </div>
     <center>
-    <div>
-        <p id="bmilabel">Let's start with <span class="bmi">BMI</span></p>
-        <form action="" id="inpt" class="forminpt">
-            <label for="age">Age:
-                <input type="number" name="age" id="age" min="0" max="100">
-            </label>
-            <label for="">Height in m:
-                <input type="number" name="height" id="height" min="0" max="2" step="0.01">
-            </label>
-            <label for="">Weight in kgs:
-                <input type="number" name="weight" id="weight" min="0" max="150">
-            </label>
-            <div class="gen">
-                <label>Gender: </label>
-                <input type="radio" name="gender" value="male"><label> Male </label>
-                <input type="radio" name="gender" value="female"><label> Female</label>
+        <div>
+            <p id="bmilabel">Let's start with <span class="bmi">BMI</span></p>
+            <form action="" id="inpt" class="forminpt">
+                <label for="age">Age:
+                    <input type="number" name="age" id="age" min="0" max="100" required>
+                </label>
+                <label for="">Height in m:
+                    <input type="number" name="height" id="height" min="0" max="2" step="0.01" required>
+                </label>
+                <label for="">Weight in kgs:
+                    <input type="number" name="weight" id="weight" min="0" max="150" required>
+                </label>
+                <div class="gen">
+                    <label>Gender: </label>
+                    <input type="radio" name="gender" value="male"><label> Male </label>
+                    <input type="radio" name="gender" value="female"><label> Female</label>
+                </div>
+                <select name="exc" id="exc">
+                    <option value="1">Little/No Excercise</option>
+                    <option value="2">Light Excercise</option>
+                    <option value="3">Moderate Excercise (3-5 days/week)</option>
+                    <option value="4">Very Active (6-7 days/week)</option>
+                    <option value="5">Extra Active (Very Active + Physical Job)</option>
+                </select>
+            </form>
+            <div class="buttondiv">
+                <button type="submit" class="submit" onclick="mybmi()">Submit</button>
             </div>
-            <select name="exc" id="exc">
-                <option value="1">Little/No Excercise</option>
-                <option value="2">Light Excercise</option>
-                <option value="3">Moderate Excercise (3-5 days/week)</option>
-                <option value="4">Very Active (6-7 days/week)</option>
-                <option value="5">Extra Active (Very Active + Physical Job)</option>
-            </select>
-        </form>
-        <div class="buttondiv">
-            <button type="submit" class="submit" onclick="mybmi()">Submit</button>
         </div>
-    </div>
     </center>
     <center>
         <div id="final-block">
-        <div id="final"></div>
-        <h2 id="result"></h2>
-        <h3 id="otpt"></h3>
-        <div id="tp"></div>
+            <div id="final"></div>
+            <h2 id="result"></h2>
+            <h3 id="otpt"></h3>
+            <div id="tp"></div>
         </div>
     </center>
 
