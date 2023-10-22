@@ -12,7 +12,7 @@ function mybmi(){
     age = document.getElementById("age").value;
     let bmi;
     bmi = parseFloat(weight)/(parseFloat(height)**2)
-    document.getElementById("result").innerHTML = bmi.toFixed(2);
+    document.getElementById("result").innerHTML = bmi;
     if (bmi<18.5){
         document.getElementById("otpt").innerHTML = "Underweight";
         document.getElementById("final").innerHTML = '<br><form action="under.html"><button type="submit">View Diet Plan</button></form>';
@@ -28,7 +28,6 @@ function mybmi(){
     }
     else{
         document.getElementById("otpt").innerHTML = "Obese";
-        document.getElementById("final").innerHTML = '<br><form action="over.html"><button type="submit">View Diet Plan</button></form>'
     }
 
     var ele = document.getElementsByName('gender');
@@ -47,6 +46,10 @@ function mybmi(){
     {
         bmr = 655.1 + (9.563*weight) + (1.85*height*100) - (4.676*age);
     }
+    else
+    {
+        document.getElementById("tp").innerHTML = "10";     
+    }  
     act = document.getElementById('exc').value;
     // document.getElementById("tp").innerHTML = "Your Activity level: " + act;
     if (act == 1)
@@ -69,27 +72,35 @@ function mybmi(){
     {
         maint = bmr*1.9;
     }
-    document.getElementById("tp").innerHTML = "Using Oxford Formula BMR: " + bmr.toFixed(2) + "<br>Maintainance Calories: " + maint.toFixed(2);
-    
+    document.getElementById("tp").innerHTML = "Using Oxford Formula BMR: " + bmr + "<br>Maintainance Calories: " + maint;
 }
+
+// STICKY NAVBAR 
 window.onscroll = function() {fixednavbar()};
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-    function fixednavbar() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function fixednavbar() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+//INPUT FIELD ANIMATIONS
+$("#age").hover(function(){
+    $(this).animate({"width":"20%"},500)
+})
+$("#height").hover(function(){
+    $(this).animate({"width":"20%"},500)
+})
+$("#weight").hover(function(){
+    $(this).animate({"width":"20%"},500)
+})
+
+//MOBILE NAVBAR DROPDOWN BUTTON
+$(".mobilebtn").click(function(){
     
-    //INPUT FIELD ANIMATIONS
-    $("#age").hover(function(){
-        $(this).animate({"width":"20%"},500)
-    })
-    $("#height").hover(function(){
-        $(this).animate({"width":"20%"},500)
-    })
-    $("#weight").hover(function(){
-        $(this).animate({"width":"20%"},500)
+    $('li a').css({"display":"block"})
+    $('ul').css({"display":"flex","flex-direction":"column"})
  })
