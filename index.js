@@ -98,9 +98,16 @@ $("#weight").hover(function(){
     $(this).animate({"width":"20%"},500)
 })
 
-//MOBILE NAVBAR DROPDOWN BUTTON
-$(".mobilebtn").click(function(){
-    
-    $('li a').css({"display":"block"})
-    $('ul').css({"display":"flex","flex-direction":"column"})
- })
+//NAVBAR CODE
+var mobileMenuBtn = document.querySelector("#mobile-menu-btn");
+var mobileMenu = document.querySelector(".mobile-menu");
+
+mobileMenuBtn.addEventListener("click", () => {
+  if (mobileMenu.style.display === "none") {
+    mobileMenu.style.display = "flex";
+    mobileMenuBtn.innerHTML = "=";
+  } else {
+    mobileMenu.style.display = "none";
+    mobileMenuBtn.innerHTML = "=";
+  }
+});
