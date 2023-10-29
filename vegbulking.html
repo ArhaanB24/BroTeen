@@ -10,21 +10,20 @@
     *{
     margin: 0;
     padding:0;
-    font-family: 'poppins', sans-serif;
     box-sizing: border-box;
+    font-family: "Barlow Condensed";
 }
 
 body h1{
     margin-top: 2%;
     color: purple;
-    text-decoration: underline;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Barlow Condensed";
+    font-size: 4rem;
 }
 
 body{
     background: black;
 }
-
 
 #accordion{
     margin: 100px auto;
@@ -48,8 +47,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 700;
     cursor: pointer;
     color: purple;
     border-radius:4px;
@@ -70,6 +69,7 @@ body{
 {
     padding: 0 10px;
     line-height: 26px;
+    font-size: 20px;
     max-height: 0;
     overflow: hidden;
     transition:  max-height 0.5s;
@@ -79,7 +79,16 @@ body{
 {
     max-height: 400px;
 }
-</style>
+@media all and (max-width:600px)
+{
+    body h1{
+    font-size: 3rem;
+}
+#accordion{
+    margin: 100px auto;
+    width: 325px;
+}
+}
 <body>
     <center><h1>Veg Bulking Diet</h1></center>
     <div>
