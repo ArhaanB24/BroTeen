@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calorie Calculator</title>
     <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    th td{
+        border: 2px solid white;
+        padding: 2rem;
+    }
+</style>
 <body>
     <center>
     <form action="">
@@ -14,7 +21,7 @@
     </form>
     <button type="submit" onclick="return calculate()">Submit</button>
     <div id="result-cal">
-        <table class="kohli" id="mytable" cellpadding="10">
+        <table class="kohli" id="mytable">
         </table>
     </div>
     <script src="calorie.js"></script>

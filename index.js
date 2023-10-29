@@ -1,8 +1,8 @@
 function overfunc(){
-    window.location.href = "over.html";
+    window.location.href = "cutting.html";
 }
 function underfunc(){
-    window.location.href = "diet.html";
+    window.location.href = "bulking.html";
 }
 function mybmi(){
     let height,weight,age,bmr,act,maint;
