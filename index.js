@@ -2,9 +2,8 @@ function overfunc(){
     window.location.href = "over.html";
 }
 function underfunc(){
-    window.location.href = "under.html";
+    window.location.href = "diet.html";
 }
-
 function mybmi(){
     let height,weight,age,bmr,act,maint;
     height = document.getElementById("height").value;
@@ -51,7 +50,6 @@ function mybmi(){
         document.getElementById("tp").innerHTML = "10";     
     }  
     act = document.getElementById('exc').value;
-    // document.getElementById("tp").innerHTML = "Your Activity level: " + act;
     if (act == 1)
     {
         maint = bmr*1.2;
@@ -72,7 +70,8 @@ function mybmi(){
     {
         maint = bmr*1.9;
     }
-    document.getElementById("tp").innerHTML = "Using Oxford Formula BMR: " + bmr + "<br>Maintainance Calories: " + maint;
+    document.getElementById("tp").innerHTML = "Using Oxford Formula BMR: " + bmr.toFixed(2) + "<br>Maintainance Calories: " + maint.toFixed(2);
+    
 }
 
 // STICKY NAVBAR 
