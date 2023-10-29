@@ -14,9 +14,9 @@ function buildtable(result){
       {
           let row = `<tr>
           <td>${result[i]["name"]}</td>
-          <td>${result[i]["serving_size_g"]}</td>
+          <td>${result[i]["serving_size_g"]}/g</td>
           <td>${result[i]["calories"]}</td>
-          <td>${result[i]["protein_g"]}</td>
+          <td>${result[i]["protein_g"]}/g</td>
           </tr>`
           tot_cal += result[i]["calories"];
           tot_prot += result[i]["protein_g"];
