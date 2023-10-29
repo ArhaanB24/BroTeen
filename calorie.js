@@ -4,9 +4,9 @@ function buildtable(result){
       let table = document.getElementById("mytable");
       table.innerHTML = `<tr>
       <th>Name</th>
-      <th>Serving Size</th>
+      <th>Serving Size/g</th>
       <th>Calories</th>
-      <th>Protein</th>
+      <th>Protein/g</th>
       </tr>`
       let tot_prot = 0;
       let tot_cal = 0;
@@ -14,9 +14,9 @@ function buildtable(result){
       {
           let row = `<tr>
           <td>${result[i]["name"]}</td>
-          <td>${result[i]["serving_size_g"]}/g</td>
+          <td>${result[i]["serving_size_g"]}</td>
           <td>${result[i]["calories"]}</td>
-          <td>${result[i]["protein_g"]}/g</td>
+          <td>${result[i]["protein_g"]}</td>
           </tr>`
           tot_cal += result[i]["calories"];
           tot_prot += result[i]["protein_g"];
