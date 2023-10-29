@@ -11,7 +11,7 @@ function mybmi(){
     age = document.getElementById("age").value;
     let bmi;
     bmi = parseFloat(weight)/(parseFloat(height)**2)
-    document.getElementById("result").innerHTML = bmi;
+    document.getElementById("result").innerHTML = bmi.toFixed(2);
     if (bmi<18.5){
         document.getElementById("otpt").innerHTML = "Underweight";
         document.getElementById("final").innerHTML = '<br><form action="bulking.html"><button type="submit">View Diet Plan</button></form>';
