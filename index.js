@@ -9,8 +9,9 @@ function mybmi(){
     height = document.getElementById("height").value;
     weight = document.getElementById("weight").value;
     age = document.getElementById("age").value;
-    let bmi;
+    let bmi=0;
     bmi = parseFloat(weight)/(parseFloat(height)**2)
+    if (bmi)
     document.getElementById("result").innerHTML = bmi.toFixed(2);
     if (bmi<18.5){
         document.getElementById("otpt").innerHTML = "Underweight";
@@ -25,7 +26,7 @@ function mybmi(){
         document.getElementById("otpt").innerHTML = "Overweight";
         document.getElementById("final").innerHTML = '<br><form action="cutting.html"><button type="submit">View Diet Plan</button></form>';
     }
-    else{
+    else if (bmi>=30){
         document.getElementById("otpt").innerHTML = "Obese";
     }
 
@@ -45,10 +46,6 @@ function mybmi(){
     {
         bmr = 655.1 + (9.563*weight) + (1.85*height*100) - (4.676*age);
     }
-    else
-    {
-        document.getElementById("tp").innerHTML = "10";     
-    }  
     act = document.getElementById('exc').value;
     if (act == 1)
     {
