@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+</head>
+<body>
+    <center>
+    <form action="">
+        <label for="query">Enter Food: </label>
+        <input type="text" id="query" name="query" placeholder="eg 25g of peanuts">
+    </form>
+    <button type="submit" onclick="return calculate()">Submit</button>
+    <div id="result-cal">
+        <table class="kohli" id="mytable" cellpadding="10">
+        </table>
+    </div>
+    <script src="calorie.js"></script>
+    </center>
+</body>
+</html>
+
+    
