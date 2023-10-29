@@ -1,0 +1,60 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: black;
+  }
+  #maintitle{
+    font-family: "Barlow Condensed";
+    padding:15px;
+    font-size: 5rem;
+    text-align: center;
+    color:white;
+  }
+  #subinfo{
+    font-family: "Barlow Condensed";
+    font-size: 2rem;
+    color:white;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 3rem;
+  }
+  .col{
+    margin-bottom: 3rem;
+  }
+  .card{
+    width:80%;
+    height:100%;
+    padding: 3px;
+  }
+  .card:hover{
+    box-shadow: 0 4px 8px 0 grey, 0 2px 20px 0 purple;
+  }
+  .card-text{
+    font-family: "Barlow Condensed";
+    font-size: 25px;
+    text-align: justify;
+  }
+  .card-title{
+    font-family: "Barlow Condensed";
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .card-img-top{
+    width:100%;
+    height:25rem;
+    border-radius: 5px;
+  }
+
+  @media all and (max-width:600px)
+  {
+    #maintitle{
+      font-size: 4rem;
+    }
+    #subinfo{
+      font-size: 1rem;
+    }
+  }
