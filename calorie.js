@@ -1,4 +1,6 @@
 function buildtable(result){
+  if (result.length>0)
+  {
       let table = document.getElementById("mytable");
       table.innerHTML = `<tr>
       <th>Name</th>
@@ -21,6 +23,11 @@ function buildtable(result){
           table.innerHTML += row;
       }
       document.getElementById("result-cal").innerHTML += "<p>Total Calories: "+tot_cal.toFixed(2)+"</p><br><p>Total Protein: "+tot_prot.toFixed(2)+"</p>";
+    }
+    else if (result.length == 0)
+    {
+      document.getElementById("result-cal").innerHTML += "<p>Food Not Found!</p>";
+    }
 };
 function calculate(){
   const query = document.getElementById("query").value;
