@@ -48,6 +48,9 @@ function calculate(){
     })
     .catch((error) => {
       console.error(error);
+      
     });
 }
-
+$("#query").hover(function () {
+  $(this).animate({ "width": "25%" }, 800)
+})
