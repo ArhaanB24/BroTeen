@@ -14,7 +14,7 @@ function mybmi(){
     document.getElementById("result").innerHTML = bmi;
     if (bmi<18.5){
         document.getElementById("otpt").innerHTML = "Underweight";
-        document.getElementById("final").innerHTML = '<br><form action="under.html"><button type="submit">View Diet Plan</button></form>';
+        document.getElementById("final").innerHTML = '<br><form action="bulking.html"><button type="submit">View Diet Plan</button></form>';
     }
     else if (bmi>=18.5 && bmi<25){
         document.getElementById("otpt").innerHTML = "Healthy Weight";
@@ -23,7 +23,7 @@ function mybmi(){
     }
     else if (bmi>=25 && bmi<30){
         document.getElementById("otpt").innerHTML = "Overweight";
-        document.getElementById("final").innerHTML = '<br><form action="over.html"><button type="submit">View Diet Plan</button></form>';
+        document.getElementById("final").innerHTML = '<br><form action="cutting.html"><button type="submit">View Diet Plan</button></form>';
     }
     else{
         document.getElementById("otpt").innerHTML = "Obese";

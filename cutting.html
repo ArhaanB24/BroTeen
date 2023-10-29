@@ -3,69 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CUTTING DIET</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<body>
-    <center><h1>Cutting Diet</h1></center>
-    <div>
-       <ul id="accordion">
-        <li> 
-            <label for="first"> MEAL 1 <span>&#x3e;</span></label>
-            <input type="radio" name="accordion" id="first">
-            <div class="content">
-                <p>
-                    • Half bowl of oats. You can dress up with strawberries/banana <br>
-                    • 1 banana <br>
-                    • Have at least 5 egg whites cooked with 1-2 portions of yolks <br>
-                </p> 
-            </div>
-        </li>
-        <li>
-            <label for="second"> MEAL 2 <span>&#x3e;</span></label>
-            <input type="radio" name="accordion" id="second">
-            <div class="content">
-                <p>
-                    • One portion of green vegetables/lettuce <br>
-                    • 250 grams of chicken breast/grilled tofu <br>
-                </p>
-            </div>
-        </li>
-        <li>
-            <label for="third"> MEAL 3 <span>&#x3e;</span></label>
-            <input type="radio" name="accordion" id="third">
-            <div class="content">
-                <p>
-                    • Chicken sandwich or wheat bread (2 slice) or one bowl of brown rice <br>
-                    • Green salad/veggies <br>
-                    • Half cup of kidney beans <br>
-                </p>
-            </div>
-        </li>
-        <li>
-            <label for="fourth"> MEAL 4 <span>&#x3e;</span></label>
-            <input type="radio" name="accordion" id="fourth">
-            <div class="content">
-                <p>
-                    • You can have a pre-work out shake to fill yourself for workouts at this time. <br>
-                    • Ingredients: <br>
-                     1 cup of milk <br> 1 scoop whey protein <br> 1 banana <br> 2 teaspoons sugar <br> 1/2 cup ice
-                </p>
-            </div>
-        </li>
-        <li>
-            <label for="fifth"> MEAL 5 <span>&#x3e;</span></label>
-            <input type="radio" name="accordion" id="fifth">
-            <div class="content">
-                <p>
-                    • 1 big bowl of salad <br>
-                    • 2 piece fish <br>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600);
+figure.snip0068 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 220px;
+  width: 100%;
+  background: black;
+  text-align: center;
+}
 
-                </p>
-            </div>
-        </li>
-       </ul> 
-    </div>
-    
+figure.snip0068 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+figure.snip0068 img {
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+figure.snip0068 figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 18%;
+  right: 18%;
+  height: 100%;
+}
+
+figure.snip0068 figcaption > div {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: 50%;
+}
+
+figure.snip0068 h3,
+figure.snip0068 span {
+  margin: 0;
+  padding: 10px 15px;
+  display: inline-block;
+  width: 100%;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+figure.snip0068 h3 {
+  background: #333333;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+}
+
+figure.snip0068 span {
+  background: #ffffff;
+  color: #4d4d4d;
+  -webkit-transform: translate3d(0%, -100%, 0);
+  transform: translate3d(0%, -100%, 0);
+}
+
+figure.snip0068 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+
+figure.snip0068.blue {
+  background: #cc80e4;
+}
+
+figure.snip0068.blue h3 {
+  background: #b318e1;
+}
+
+figure.snip0068.red {
+  background: #cc80e4;
+}
+
+figure.snip0068.red h3 {
+  background: #b318e1;
+}
+
+figure.snip0068.yellow {
+  background: #cc80e4;
+}
+
+figure.snip0068.yellow h3 {
+  background: #b318e1;
+}
+
+figure.snip0068:hover img,
+figure.snip0068.hover img {
+  opacity: 0.35;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+figure.snip0068:hover figcaption h3,
+figure.snip0068.hover figcaption h3 {
+  -webkit-transform: translate3d(0%, 100%, 0);
+  transform: translate3d(0%, 100%, 0);
+}
+
+figure.snip0068:hover figcaption span,
+figure.snip0068.hover figcaption span {
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+}
+
+
+/* Demo purposes only */
+html {
+  height: 100%;
+}
+body {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  height: 100%;
+}
+</style>
+<body>
+    <figure class="snip0068 yellow"><img src="static/2.jpg" alt="sample12" />
+            <figcaption>
+              <div>
+                <h3>NON VEG CUTTING DIET</h3>
+              </div>
+              <div><span>VIEW</span></div>
+              <a href="nonvegcutting.html"></a>
+            </figcaption>
+          </figure>
+          <figure class="snip0068 yellow"><img src="static/veg.jpeg" alt="sample1234" />
+            <figcaption>
+              <div>
+                <h3>VEG CUTTING DIET</h3>
+              </div>
+              <div><span>VIEW</span></div>
+              <a href="vegcutting.html"></a>
+            </figcaption>
+          </figure>
+      <script>
+      $("figure").mouseleave(
+      function() {
+        $(this).removeClass("hover");
+      }
+    );
+      </script>
 </body>
 </html>

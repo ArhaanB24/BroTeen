@@ -3,92 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BULKING DIET</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600);
+figure.snip0068 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 220px;
+  width: 100%;
+  background: black;
+  text-align: center;
+}
+
+figure.snip0068 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+figure.snip0068 img {
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+figure.snip0068 figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 18%;
+  right: 18%;
+  height: 100%;
+}
+
+figure.snip0068 figcaption > div {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: 50%;
+}
+
+figure.snip0068 h3,
+figure.snip0068 span {
+  margin: 0;
+  padding: 10px 15px;
+  display: inline-block;
+  width: 100%;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+figure.snip0068 h3 {
+  background: #333333;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+}
+
+figure.snip0068 span {
+  background: #ffffff;
+  color: #4d4d4d;
+  -webkit-transform: translate3d(0%, -100%, 0);
+  transform: translate3d(0%, -100%, 0);
+}
+
+figure.snip0068 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+
+figure.snip0068.blue {
+  background: #cc80e4;
+}
+
+figure.snip0068.blue h3 {
+  background: #b318e1;
+}
+
+figure.snip0068.red {
+  background: #cc80e4;
+}
+
+figure.snip0068.red h3 {
+  background: #b318e1;
+}
+
+figure.snip0068.yellow {
+  background: #cc80e4;
+}
+
+figure.snip0068.yellow h3 {
+  background: #b318e1;
+}
+
+figure.snip0068:hover img,
+figure.snip0068.hover img {
+  opacity: 0.35;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+figure.snip0068:hover figcaption h3,
+figure.snip0068.hover figcaption h3 {
+  -webkit-transform: translate3d(0%, 100%, 0);
+  transform: translate3d(0%, 100%, 0);
+}
+
+figure.snip0068:hover figcaption span,
+figure.snip0068.hover figcaption span {
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+}
+
+
+/* Demo purposes only */
+html {
+  height: 100%;
+}
+body {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  height: 100%;
+}
+</style>
 <body>
-    <center><h1>Bulking Diet</h1></center>
-    <div>
-       <ul id="accordion">
-        <li> 
-            <label for="first"> MEAL 1 <span>&#x3e;</span></label>
-            <input type="radio" name="accordion" id="first">
-            <div class="content">
-                <p>
-                    • Scrambled eggs (3-4 eggs) with vegetables (1 cup) <br>
-                    • 2 whole wheat toast slices <br>
-                    • 1 glass of milk (250ml) <br>
-                
-                </p>
-            </div>
-        </li>
-        <li>
-            <label for="second"> MEAL 2 <span>&#x3e;</span></label>
-            <input type="radio" name="accordion" id="second">
-            <div class="content">
-                <p>
-                    • Serving of Greek yogurt (200-250g) with honey or fruit.
-
-                </p>
-            </div>
-        </li>
-        <li>
-            <label for="third"> MEAL 3 <span>&#x3e;</span></label>
-            <input type="radio" name="accordion" id="third">
-            <div class="content">
-                <p>
-                    • Grilled chicken breast or fish (200-250g) with a side of mixed vegetables (1-1.5 cups) <br>
-                    • Brown rice or quinoa (1 cup) <br>
-                    • A salad with cucumbers, carrots, and tomatoes <br>
-
-                </p>
-            </div>
-        </li>
-        <li>
-            <label for="fourth"> MEAL 4 <span>&#x3e;</span></label>
-            <input type="radio" name="accordion" id="fourth">
-            <div class="content">
-                <p>
-                    • Protein shake with whey protein (1-2 scoops) mixed with water or milk. <br>
-                </p>
-            </div>
-        </li>
-        <li>
-            <label for="fifth"> MEAL 5 <span>&#x3e;</span></label>
-            <input type="radio" name="accordion" id="fifth">
-            <div class="content">
-                <p>
-                    • A banana or other piece of fruit <br>
-                    • A serving of mixed nuts (almonds, walnuts, or cashews) or a small portion of cottage cheese <br>
-                </p>
-            </div>
-        </li>
-        <li>
-            <label for="sixth"> MEAL 6 <span>&#x3e;</span></label>
-            <input type="radio" name="accordion" id="sixth">
-            <div class="content">
-                <p>
-                    • Boiled chicken (200-250g) with grilled vegetables (1-1.5 cups) <br>
-                    • Whole wheat roti (2) or brown rice (1 cup).
-                    • Raita with yogurt, cucumber, and mint (1/2 cup).
-                     
-                </p>
-            </div>
-        </li>
-        <li>
-            <label for="eight"> TIPS <span>&#x3e;</span></label>
-            <input type="radio" name="accordion" id="eight">
-            <div class="content">
-                <p>
-                    • Stay hydrated with water or herbal teas throughout the day. <br>
-                    • Include healthy fats from sources like avocados, olive oil, and nuts. <br>
-                    • Monitor your progress and make necessary adjustments in portion sizes and food choices to meet your bulking goals. <br>
-                    • Engage in regular strength training to complement your diet and promote muscle growth. <br>
-                </p>
-            </div>
-        </li>
-       </ul> 
-    </div>
-    
+        <figure class="snip0068 blue"><img src="static/1.jpg" alt="sampl" />
+            <figcaption>
+              <div>
+                <h3>NON VEG BULKING DIET</h3>
+              </div>
+              <div><span>VIEW</span></div>
+              <a href="nonvegbulking.html"></a>
+            </figcaption>
+          </figure>
+          <figure class="snip0068 yellow"><img src="static/veg2.jpg" alt="sample12" />
+            <figcaption>
+              <div>
+                <h3>VEG BULKING DIET</h3>
+              </div>
+              <div><span>VIEW</span></div>
+              <a href="vegbulking.html"></a>
+            </figcaption>
+          </figure>
+      <script>
+      $("figure").mouseleave(
+      function() {
+        $(this).removeClass("hover");
+      }
+    );
+      </script>
 </body>
 </html>
