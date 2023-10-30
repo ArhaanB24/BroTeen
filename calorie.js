@@ -22,11 +22,13 @@ function buildtable(result){
           tot_prot += result[i]["protein_g"];
           table.innerHTML += row;
       }
-      document.getElementById("result-cal").innerHTML += "<p>Total Calories: "+tot_cal.toFixed(2)+"</p><br><p>Total Protein: "+tot_prot.toFixed(2)+"</p>";
+      document.getElementById("result-cal").innerHTML = "<p>Total Calories: "+tot_cal.toFixed(2)+"<br>Total Protein: "+tot_prot.toFixed(2)+"</p>";
     }
     else if (result.length == 0)
     {
-      document.getElementById("result-cal").innerHTML += "<p>Food Not Found!</p>";
+      let table = document.getElementById("mytable");
+      table.innerHTML = ""
+      document.getElementById("result-cal").innerHTML = "<p>Food Not Found!</p>";
     }
 };
 function calculate(){
