@@ -13,7 +13,7 @@ body {
   
   #lower {
     font-weight: bolder;
-    color: purple;
+    color: greenyellow;
   }
   
   .sayingdiv {
@@ -91,7 +91,7 @@ body {
     width: 100%;
   }
   #navbar:hover {
-    border-bottom: 2px solid purple;
+    border-bottom: 2px solid greenyellow;
     background: rgba(0, 0, 0, 1);
   }
   
@@ -114,7 +114,7 @@ body {
   }
   
   .keywords {
-    color: purple;
+    color: greenyellow;
     font-weight: 600;
     font-size: 3.3rem;
   }
@@ -150,13 +150,13 @@ body {
   #banner1:hover {
     height: 25.7rem;
     width: 21.7rem;
-    box-shadow: 0 4px 8px 0 grey, 0 2px 20px 0 purple;
+    box-shadow: 0 4px 8px 0 grey, 0 2px 20px 0 greenyellow;
   }
   
   #banner2:hover {
     height: 25.7rem;
     width: 21.7rem;
-    box-shadow: 0 4px 8px 0 grey, 0 2px 20px 0 purple;
+    box-shadow: 0 4px 8px 0 grey, 0 2px 20px 0 greenyellow;
   }
   
   /* FORM */
@@ -183,7 +183,7 @@ body {
     width: 0%;
     color: white;
     background-color: transparent;
-    border-bottom: 2px solid purple;
+    border-bottom: 2px solid greenyellow;
   }
   
   input[type="text"] {
@@ -204,7 +204,7 @@ body {
   }
   
   .bmi {
-    color: purple;
+    color: greenyellow;
     font-weight: 600;
     font-size: 3.3rem;
   }
@@ -218,7 +218,7 @@ body {
     font-family: "Barlow Condensed";
     padding: 10px;
     border-radius: 10px;
-    background-color: purple;
+    background-color: greenyellow;
     color: white;
   }
   select {
@@ -238,7 +238,7 @@ body {
     border-radius: 30px;
     width:fit-content;
     padding: 30px;
-    box-shadow: 0 4px 15px 0 grey, 0 3px 20px 0 purple;
+    box-shadow: 0 4px 15px 0 grey, 0 3px 20px 0 greenyellow;
   }
   #final-block {
     padding: 3rem;
@@ -252,7 +252,7 @@ body {
     border-radius: 10px;
     background-color: transparent;
     border-color: white;
-    color: purple;
+    color: greenyellow;
     margin-bottom: 30px;
   }
   
@@ -318,7 +318,7 @@ body {
     }
   
     .keywords {
-      color: purple;
+      color: greenyellow;
       font-weight: 600;
       font-size: 25px;
     }
@@ -386,7 +386,7 @@ body {
     }
   
     .bmi {
-      color: purple;
+      color: greenyellow;
       font-weight: 600;
       font-size: 25px;
     }
@@ -400,7 +400,7 @@ body {
       font-family: "Barlow Condensed";
       padding: 10px;
       border-radius: 10px;
-      background-color: purple;
+      background-color: greenyellow;
       color: white;
     }
   
@@ -455,14 +455,14 @@ a:link{
   text-decoration: none;
 }
 .knowmore{
-  background-color: purple;
+  background-color: greenyellow;
   padding: 5px;
   font-size: 20px;
   font-family: "Barlow Condensed";
   border-radius: 5px;
 }
 .card:hover{
-  box-shadow: 0 4px 8px 0 grey, 0 2px 20px 0 purple;
+  box-shadow: 0 4px 8px 0 grey, 0 2px 20px 0 greenyellow;
 }
 .card-text{
   font-family: "Barlow Condensed";
