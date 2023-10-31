@@ -183,19 +183,21 @@ body {
     width: 0%;
     color: white;
     background-color: transparent;
-    border-bottom: 2px solid greenyellow;
+    font-family: "Barlow Condensed";
   }
   
   input[type="text"] {
     font-size: 1.5rem;
     padding-right: 10px;
+    border-bottom: 2px solid greenyellow;
   }
   
   input[type="radio"] {
     width: 1.5rem;
     height: 1.5rem;
+    accent-color: greenyellow;
+    background: none;
   }
-  
   #bmilabel {
     font-size: 3.3rem;
     margin-bottom: 3rem;
@@ -223,8 +225,13 @@ body {
   }
   select {
     margin-top: 2rem;
-    width: 30rem;
+    width: 25rem;
     height: 2rem;
+    background: transparent;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Barlow Condensed";
   }
   
   select[type="option"] {
