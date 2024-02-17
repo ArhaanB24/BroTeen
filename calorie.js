@@ -35,7 +35,7 @@ function calculate(){
   const query = document.getElementById("query").value;
   fetch("https://api.api-ninjas.com/v1/nutrition?query=" + query, {
     headers: {
-      "X-Api-Key": "sRjB8a356iqcZhRxJl7epQ==05RhT8TT2EkDxY2Q",
+      "X-Api-Key": "9pKHttugZf8eZlo15m994Q==xoiiWioT3GrOnvMl",
     },
   })
     .then((response) => {
